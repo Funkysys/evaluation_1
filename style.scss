@@ -1,0 +1,52 @@
+$color1 : #0A0908;
+$color2 : #22333B;
+$color3 : #EAE0D5;
+$color4 : #C6AC8F;
+$color1 : #5E503F;
+$fontColor1 : #f1e4e4;
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+    padding : 3vw 1vw;
+    width: 100vw;
+    background-color: $color2;
+    color : $color3;
+}
+h1 {
+    font-size: 1.3em;
+    margin: 0 2vw;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 2vw;
+}
+nav ul li {
+    margin: 0 1vw;
+}
+
+article {
+    width: 40vh;
+}
+
+@media(min-width : 500px) {
+    body {
+        margin: 0 15vw;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        padding : 4vh 15vw;
+        background-color: $color2;
+        color : $fontColor1;
+    }
+}
