@@ -1,5 +1,65 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+}
+
 body {
   width: 100vw;
+  height: 70vh;
   margin: 0;
   padding: 0;
 }
@@ -17,13 +77,18 @@ header {
   height: 4vh;
   padding: 3vw 1vw;
   width: 100vw;
-  background-color: #22333B;
-  color: #EAE0D5;
+  background-color: #29b1a8;
+  color: #2f3a47;
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 0 2vw;
+  color: #2f3a47;
+}
+
+h1 span {
+  color: #F7FFF7;
 }
 
 nav ul {
@@ -34,18 +99,131 @@ nav ul {
   margin: 2vw;
 }
 
-nav ul li {
-  margin: 0 1vw;
+nav ul li a {
+  margin: 0 2vw;
+  color: #F7FFF7;
 }
 
-article {
-  width: 40vh;
+nav ul li a:hover {
+  color: #fff4bf;
+}
+
+.welcome_page {
+  height: 30vh;
+  background-color: #F7FFF7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.welcome_page h2 {
+  margin-bottom: 2vh;
+}
+
+.welcome_page button {
+  background-color: #FF6B6B;
+  padding: 1vh 5vw;
+  color: #F7FFF7;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.welcome_page button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: lightblue;
+}
+
+.welcome_page button:hover {
+  font-size: 0.8em;
+}
+
+.asso_description {
+  padding: 2vh 5vw;
+  line-height: 1.5em;
+  background-color: #29b1a8;
+  color: #F7FFF7;
+}
+
+.asso_description h2 {
+  text-decoration: underline;
+  font-size: 1.3em;
+  margin-bottom: 1vh;
+}
+
+.asso_description h3 {
+  text-decoration: underline;
+}
+
+.asso_description section {
+  margin-top: 1vh;
+}
+
+.asso_description button {
+  background-color: #FFE66D;
+  padding: 0.5vh 2vw;
+  color: #F7FFF7;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  font-size: 0.6em;
+  color: #2f3a47;
+}
+
+.asso_description button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: lightblue;
+}
+
+.support {
+  padding: 2vh 5vw;
+  line-height: 1.5em;
+  background-color: #F7FFF7;
+}
+
+.support h2 {
+  text-decoration: underline;
+  font-size: 1.3em;
+  margin-bottom: 1vh;
+}
+
+.support h3 {
+  text-decoration: underline;
+}
+
+.support section {
+  margin-top: 1vh;
+}
+
+footer {
+  height: 10vh;
+  background-color: #2f3a47;
+  color: #FFE66D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 500px) {
-  body {
-    margin: 0 15vw;
-  }
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -58,8 +236,8 @@ article {
             align-items: center;
     height: 10vh;
     padding: 4vh 15vw;
-    background-color: #22333B;
-    color: #f1e4e4;
+    background-color: #29b1a8;
+    color: #F7FFF7;
   }
 }
 /*# sourceMappingURL=style.css.map */
