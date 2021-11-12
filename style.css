@@ -79,7 +79,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 4vh;
+  height: 6vh;
   padding: 3vw 1vw;
   width: 100vw;
   background-color: #29b1a8;
@@ -114,7 +114,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #fff4bf;
+  color: #fff0a5;
 }
 
 nav ul li a:active {
@@ -205,11 +205,6 @@ nav ul li a:active {
   font-size: 0.8em;
 }
 
-.logo img {
-  width: 30vw;
-  height: 30vh;
-}
-
 .asso_description {
   padding: 3vh 7vw;
   line-height: 1.5em;
@@ -228,9 +223,6 @@ nav ul li a:active {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-}
-
-.asso_description section {
   margin-top: 1vh;
 }
 
@@ -269,9 +261,6 @@ nav ul li a:active {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-}
-
-.support section {
   margin-top: 1vh;
 }
 
@@ -284,7 +273,7 @@ nav ul li a:active {
   color: #d3af00;
 }
 
-.contact {
+#contact {
   padding: 3vh 7vw;
   line-height: 1.5em;
   background-color: #29b1a8;
@@ -299,62 +288,49 @@ nav ul li a:active {
   vertical-align: center;
 }
 
-.contact h2 {
+#contact h2 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   font-size: 1.3em;
   margin-bottom: 2vh;
 }
 
-.contact h3 {
+#contact h3 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-}
-
-.contact section {
   margin-top: 1vh;
 }
 
-#mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: black;
-  font-size: 1.4em;
-}
-
-#logoMail {
+.logo {
   width: 50px;
   height: 50px;
   float: left;
-  margin: 20px 50px 0 0px;
+  margin: 20px 20px 0 0px;
   background-color: #eee;
   border-radius: 50px;
   border: 5px solid #2f3a47;
 }
 
-#logoMail:hover {
+.logo:hover {
   float: left;
   border: 5px solid #FF6B6B;
 }
 
-#myMail {
+#mail {
   text-decoration: none;
   color: #1a1918;
-  margin-top: 40px;
+  margin-top: 5vh;
   font-weight: 600;
+  font-size: 0.7em;
 }
 
-#myMail:hover {
+#mail:hover {
   text-decoration: underline;
   color: #FFE66D;
 }
 
-#iconPhone {
+.mail_and_phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,31 +341,76 @@ nav ul li a:active {
   font-size: 2em;
 }
 
-#logoPhone {
-  width: 50px;
-  height: 50px;
-  float: left;
-  margin: 20px 50px 0 0px;
-  border-radius: 50px;
-  border: 5px solid #2f3a47;
-  background-color: #eee;
-}
-
-#logoPhone:hover {
-  float: left;
-  background-color: #eee;
-  border: 5px solid #FF6B6B;
-}
-
-#myPhone {
+#phone {
   text-decoration: none;
   color: #1a1918;
-  margin: 40px 0;
+  margin: 5vh 0;
 }
 
-#myPhone:hover {
+#phone:hover {
   text-decoration: underline;
   color: #FFE66D;
+}
+
+.upcomming_event {
+  padding: 3vh 7vw;
+  line-height: 1.5em;
+  background-color: #F7FFF7;
+}
+
+.upcomming_event h2 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  font-size: 1.3em;
+  margin-bottom: 2vh;
+}
+
+.upcomming_event h3 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  margin-bottom: 1.5vh;
+  margin-top: 1vh;
+}
+
+.passed_event {
+  padding: 3vh 7vw;
+  line-height: 1.5em;
+  background-color: #29b1a8;
+  color: #F7FFF7;
+}
+
+.passed_event h2 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  font-size: 1.3em;
+  margin-bottom: 2vh;
+}
+
+.passed_event h3 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  margin-bottom: 1.5vh;
+  margin-top: 1vh;
+}
+
+.stage_event {
+  padding: 3vh 7vw;
+  line-height: 1.5em;
+  background-color: #F7FFF7;
+}
+
+.stage_event h2 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  font-size: 1.3em;
+  margin-bottom: 2vh;
+}
+
+.stage_event h3 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  margin-bottom: 1.5vh;
+  margin-top: 1vh;
 }
 
 footer {
@@ -407,21 +428,9 @@ footer {
           align-items: center;
 }
 
-@media (min-width: 500px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 10vh;
-    padding: 4vh 15vw;
-    background-color: #29b1a8;
-    color: #F7FFF7;
+@media screen and (min-width: 415px) {
+  h1 {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
