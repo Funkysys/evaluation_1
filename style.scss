@@ -81,7 +81,7 @@ $color5 : #FFE66D;
     h2 {
         font-family: 'Merriweather', serif;
         text-decoration: underline;
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-bottom: 2vh;
     }
     h3 {
@@ -89,6 +89,7 @@ $color5 : #FFE66D;
         text-decoration: underline;
         margin-bottom: 1.5vh;
         margin-top: 1vh;
+        $color: white;
     }
 }
 
@@ -111,15 +112,14 @@ header {
     top: -1px;
     align-items: center;
     height: 6vh;
-    padding : 3vw 1vw;
+    padding : 1vh 1vw;
     width: 100vw;
     background-color: $color2;
     color : $color1;
-    
 }
 h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 0 2vw;
     margin-top: -0.6vh;
     color: $color1;
@@ -183,7 +183,6 @@ nav ul li a:active {
 }
 .welcome_page h2 span {
     color: lighten($color1, $amount : 20%);
-    
 }
 .welcome_page button {
     @include button($color4, $padding: 1vh 5vw);
@@ -305,7 +304,114 @@ footer {
     h1 {
         font-size: 2em;
     }
-}
-@media(min-width : 500px) {
+    @mixin article_base {
+        h2 {
+            font-size: 1.3em;
+        }
+    }
     
+}
+@media screen and (min-width : 900px) {
+    @mixin article_suite {
+        padding: 10vh 25vw;
+        line-height: 1.5em;
+        h2 {
+            font-family: 'Merriweather', serif;
+            text-decoration: underline;
+            font-size: 2.5em;
+            margin-bottom: 6vh;
+        }
+        h3 {
+            font-family: 'Merriweather', serif;
+            text-decoration: underline;
+            margin-bottom: 2vh;
+            margin-top: 3vh;
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.3em;
+        }
+    }
+    header {
+        padding : 4vh 1vw;
+        width: 100vw;
+        background-color: $color2;
+        color : $color1;
+    }
+    h1 { 
+        font-size: 4em;
+    }
+    nav ul li a {
+        font-size: 1.5em;
+    }
+    .welcome_page {
+        height: 85vh;
+    }
+    .welcome_page h2 {
+        margin-bottom: 10vh;
+        font-size: 10em;
+    }
+    @keyframes shine {
+        60% {
+            background-position: 3.8em;
+        }
+    }
+    .welcome_page button {
+        @include button($color4, $padding: 2vh 5vw);
+        font-size: 3em;       
+    }
+    .welcome_page button:hover {
+        font-size: 2.8em;
+        border-top: 0.1em solid transparent;
+    }
+    .asso_description {
+        @include article_suite();
+    }
+    .asso_description button {
+        font-size: 1.3em;
+        margin-top: 1vh;
+    }
+    .support {
+        @include article_suite();
+        font-size: 1.3em;
+    }
+    #contact {
+        @include article_suite();
+        text-align: center;
+    }
+    #contact h2 {
+        font-size: 3.5em;
+    }
+    .logo {
+        width: 90px;
+        height: 90px;
+        margin: 5vh 5vw 0 0px;
+    }
+    #mail {
+        margin-top: 10vh;
+    }
+    .mail_and_phone {
+        font-size: 3em;
+    }
+    #phone {
+        margin : 10vh 0;
+    }
+
+    // Event Page
+
+    .upcomming_event {
+        @include article_suite();
+    }
+
+    .passed_event {
+        @include article_suite();
+    }
+
+    .stage_event {
+        @include article_suite();
+    }
+
+    footer {
+        font-size: 1.4em;
+    }
 }
