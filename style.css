@@ -73,9 +73,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
-  top: -1px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -84,6 +81,7 @@ header {
   width: 100vw;
   background-color: #29b1a8;
   color: #2f3a47;
+  overflow: hidden;
 }
 
 h1 {
@@ -113,11 +111,7 @@ nav ul li a {
   color: #F7FFF7;
 }
 
-nav ul li a:hover {
-  color: #fff0a5;
-}
-
-nav ul li a:active {
+nav ul li a:visited {
   color: #fff4bf;
 }
 
@@ -201,10 +195,6 @@ nav ul li a:active {
   color: lightblue;
 }
 
-.welcome_page button:hover {
-  font-size: 0.8em;
-}
-
 .asso_description {
   padding: 3vh 7vw;
   line-height: 1.5em;
@@ -269,10 +259,6 @@ nav ul li a:active {
   color: #627994;
 }
 
-.support a:hover {
-  color: #d3af00;
-}
-
 #contact {
   padding: 3vh 7vw;
   line-height: 1.5em;
@@ -312,22 +298,12 @@ nav ul li a:active {
   border: 5px solid #2f3a47;
 }
 
-.logo:hover {
-  float: left;
-  border: 5px solid #FF6B6B;
-}
-
 #mail {
   text-decoration: none;
   color: #1a1918;
   margin-top: 5vh;
   font-weight: 600;
   font-size: 0.7em;
-}
-
-#mail:hover {
-  text-decoration: underline;
-  color: #FFE66D;
 }
 
 .mail_and_phone {
@@ -345,11 +321,6 @@ nav ul li a:active {
   text-decoration: none;
   color: #1a1918;
   margin: 5vh 0;
-}
-
-#phone:hover {
-  text-decoration: underline;
-  color: #FFE66D;
 }
 
 .upcomming_event {
@@ -447,6 +418,9 @@ footer {
   nav ul li a {
     font-size: 1.5em;
   }
+  nav ul li a:hover {
+    color: #fff0a5;
+  }
   .welcome_page {
     height: 85vh;
   }
@@ -527,6 +501,9 @@ footer {
   .support p {
     font-size: 1.3em;
   }
+  .support a:hover {
+    color: #d3af00;
+  }
   #contact {
     padding: 10vh 25vw;
     line-height: 1.5em;
@@ -556,14 +533,26 @@ footer {
     height: 90px;
     margin: 5vh 5vw 0 0px;
   }
+  .logo:hover {
+    float: left;
+    border: 5px solid #FF6B6B;
+  }
   #mail {
     margin-top: 10vh;
+  }
+  #mail:hover {
+    text-decoration: underline;
+    color: #FFE66D;
   }
   .mail_and_phone {
     font-size: 3em;
   }
   #phone {
     margin: 10vh 0;
+  }
+  #phone:hover {
+    text-decoration: underline;
+    color: #FFE66D;
   }
   .upcomming_event {
     padding: 10vh 25vw;

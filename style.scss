@@ -108,14 +108,13 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: -1px;
     align-items: center;
     height: 6vh;
     padding : 1vh 1vw;
     width: 100vw;
     background-color: $color2;
     color : $color1;
+    overflow: hidden;
 }
 h1 {
     font-family: 'Roboto Slab', serif;
@@ -138,10 +137,7 @@ nav ul li a {
     margin: 0 2vw;
     color : $color3;
 }
-nav ul li a:hover {
-    color : lighten($color5, $amount : 11%);
-}
-nav ul li a:active {
+nav ul li a:visited {
     color : lighten($color5, $amount : 16%);
 }
 
@@ -187,9 +183,6 @@ nav ul li a:active {
 .welcome_page button {
     @include button($color4, $padding: 1vh 5vw);
 }
-.welcome_page button:hover {
-    font-size: 0.8em;
-}
 
 // Infos
 
@@ -215,9 +208,7 @@ nav ul li a:active {
     font-weight: 600;
     color: lighten($color1, $amount : 25%);
 } 
-.support a:hover {
-    color: darken($color5, $amount : 30%)
-} 
+
 
 // Contact
 
@@ -239,20 +230,12 @@ nav ul li a:active {
 	border-radius: 50px;
 	border: 5px solid $color1;
 }
-.logo:hover {
-	float : left;
-	border: 5px solid $color4;
-}
 #mail {
 	text-decoration: none;
 	color: rgb(26, 25, 24);
 	margin-top: 5vh;
     font-weight: 600;
     font-size: 0.7em;
-}
-#mail:hover {
-	text-decoration: underline;
-	color: $color5;
 }
 .mail_and_phone {
 	display: flex;
@@ -265,11 +248,6 @@ nav ul li a:active {
 	color: rgb(26, 25, 24);
 	margin : 5vh 0;
 }
-#phone:hover {
-	text-decoration: underline;
-	color: $color5;
-}
-
 
 // Event Page
 
@@ -332,6 +310,9 @@ footer {
             font-size: 1.3em;
         }
     }
+
+    // Header 
+
     header {
         padding : 4vh 1vw;
         width: 100vw;
@@ -344,6 +325,12 @@ footer {
     nav ul li a {
         font-size: 1.5em;
     }
+    nav ul li a:hover {
+        color : lighten($color5, $amount : 11%);
+    }
+
+    // Welcome Page
+
     .welcome_page {
         height: 85vh;
     }
@@ -375,6 +362,12 @@ footer {
         @include article_suite();
         font-size: 1.3em;
     }
+    .support a:hover {
+        color: darken($color5, $amount : 30%)
+    } 
+
+    // Contact
+
     #contact {
         @include article_suite();
         text-align: center;
@@ -387,14 +380,26 @@ footer {
         height: 90px;
         margin: 5vh 5vw 0 0px;
     }
+    .logo:hover {
+        float : left;
+        border: 5px solid $color4;
+    }
     #mail {
         margin-top: 10vh;
+    }
+    #mail:hover {
+        text-decoration: underline;
+        color: $color5;
     }
     .mail_and_phone {
         font-size: 3em;
     }
     #phone {
         margin : 10vh 0;
+    }
+    #phone:hover {
+        text-decoration: underline;
+        color: $color5;
     }
 
     // Event Page
@@ -410,7 +415,9 @@ footer {
     .stage_event {
         @include article_suite();
     }
-
+    
+    // Footer
+    
     footer {
         font-size: 1.4em;
     }
