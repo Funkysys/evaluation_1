@@ -53,6 +53,7 @@ button {
 
 //  RESET END
 
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Merriweather:wght@300&family=Roboto+Slab:wght@200&display=swap');
 
 $color1 : #2f3a47;
 $color2 : #29b1a8;
@@ -66,28 +67,32 @@ $color5 : #FFE66D;
     color: $color3;
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
-
+    
     &:hover {
         box-shadow: none;
         color: lightblue;
     }
 }
 @mixin article_base {
-    padding: 2vh 5vw;
+    padding: 3vh 7vw;
     line-height: 1.5em;
     h2 {
+        font-family: 'Merriweather', serif;
         text-decoration: underline;
         font-size: 1.3em;
-        margin-bottom: 1vh;
+        margin-bottom: 2vh;
     }
     h3 {
+        font-family: 'Merriweather', serif;
         text-decoration: underline;
+        margin-bottom: 1.5vh;
     }
     section {
         margin-top: 1vh;
     }
 }
 body {
+    font-family: 'David Libre', serif;
     width: 100vw;
     height: 70vh;
     margin: 0;
@@ -104,8 +109,10 @@ header {
     color : $color1;
 }
 h1 {
-    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8em;
     margin: 0 2vw;
+    margin-top: -0.6vh;
     color: $color1;
 }
 h1 span {
@@ -117,6 +124,8 @@ nav ul {
     margin: 2vw;
 }
 nav ul li a {
+    font-family: 'Merriweather', serif;
+    font-size: 0.8em;
     margin: 0 2vw;
     color : $color3;
 }
@@ -134,8 +143,14 @@ nav ul li a:hover {
     text-align: center;
 }
 .welcome_page h2 {
+    font-family: 'Merriweather', serif;
     margin-bottom: 2vh;
-
+    font-size: 3em;
+    color: $color1;
+}
+.welcome_page h2 span {
+    color: lighten($color1, $amount : 25%);
+    
 }
 .welcome_page button {
     @include button($color4, $padding: 1vh 5vw);

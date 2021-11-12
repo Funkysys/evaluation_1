@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=David+Libre&family=Merriweather:wght@300&family=Roboto+Slab:wght@200&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,6 +59,7 @@ button {
 }
 
 body {
+  font-family: 'David Libre', serif;
   width: 100vw;
   height: 70vh;
   margin: 0;
@@ -82,8 +84,10 @@ header {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.8em;
   margin: 0 2vw;
+  margin-top: -0.6vh;
   color: #2f3a47;
 }
 
@@ -100,6 +104,8 @@ nav ul {
 }
 
 nav ul li a {
+  font-family: 'Merriweather', serif;
+  font-size: 0.8em;
   margin: 0 2vw;
   color: #F7FFF7;
 }
@@ -128,7 +134,14 @@ nav ul li a:hover {
 }
 
 .welcome_page h2 {
+  font-family: 'Merriweather', serif;
   margin-bottom: 2vh;
+  font-size: 3em;
+  color: #2f3a47;
+}
+
+.welcome_page h2 span {
+  color: #627994;
 }
 
 .welcome_page button {
@@ -151,20 +164,23 @@ nav ul li a:hover {
 }
 
 .asso_description {
-  padding: 2vh 5vw;
+  padding: 3vh 7vw;
   line-height: 1.5em;
   background-color: #29b1a8;
   color: #F7FFF7;
 }
 
 .asso_description h2 {
+  font-family: 'Merriweather', serif;
   text-decoration: underline;
   font-size: 1.3em;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 .asso_description h3 {
+  font-family: 'Merriweather', serif;
   text-decoration: underline;
+  margin-bottom: 1.5vh;
 }
 
 .asso_description section {
@@ -189,19 +205,22 @@ nav ul li a:hover {
 }
 
 .support {
-  padding: 2vh 5vw;
+  padding: 3vh 7vw;
   line-height: 1.5em;
   background-color: #F7FFF7;
 }
 
 .support h2 {
+  font-family: 'Merriweather', serif;
   text-decoration: underline;
   font-size: 1.3em;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 .support h3 {
+  font-family: 'Merriweather', serif;
   text-decoration: underline;
+  margin-bottom: 1.5vh;
 }
 
 .support section {
