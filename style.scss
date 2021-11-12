@@ -135,6 +135,9 @@ nav ul li a {
 nav ul li a:hover {
     color : lighten($color5, $amount : 16%);
 }
+nav ul li a:active {
+    color : lighten($color5, $amount : 16%);
+}
 
 .welcome_page {
     height: 30vh;
@@ -149,11 +152,29 @@ nav ul li a:hover {
     font-family: 'Merriweather', serif;
     margin-bottom: 2vh;
     font-size: 3em;
-    color: $color1;
     border-bottom: 1px solid transparent;
+    padding: 12px 48px;
+    color: lighten($color1, $amount : 60%);
+    background: linear-gradient(to right, $color5 40%, white 20%, lighten($color5, $amount:26%) 40%);
+    background-position: 0;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    border-radius: 100px;
+}
+@keyframes shine {
+    0% {
+        background-position: 0px;
+    }
+    60% {
+        background-position: 220px;
+    }
+    100% {
+        background-position: 0px;
+    }
 }
 .welcome_page h2 span {
-    color: lighten($color1, $amount : 25%);
+    color: lighten($color1, $amount : 20%);
     
 }
 .welcome_page button {
@@ -174,6 +195,7 @@ nav ul li a:hover {
 }
 .asso_description button {
     @include button($color5, $padding: 0.5vh 2vw);
+    margin-left: 2vw;
     font-size: 0.6em;
     color: $color1;
 }
@@ -182,6 +204,82 @@ nav ul li a:hover {
     @include article_base();
     background-color: $color3;
 }
+.support a {
+    font-weight: 600;
+    color: lighten($color1, $amount : 25%);
+} 
+.support a:hover {
+    color: darken($color5, $amount : 30%)
+} 
+
+.contact {
+    @include article_base();
+	background-color: $color2;
+    color: $color3;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+
+}
+#mail {
+	display: flex;
+	justify-content: center;
+	color: rgb(0, 0, 0);
+    font-size: 1.4em;
+}
+#logoMail {
+	width: 50px;
+	height: 50px;
+	float : left;
+	margin: 20px 50px 0 0px;
+	background-color: #eee;
+	border-radius: 50px;
+	border: 5px solid $color1;
+}
+#logoMail:hover {
+	float : left;
+	border: 5px solid $color4;
+}
+#myMail {
+	text-decoration: none;
+	color: rgb(26, 25, 24);
+	margin-top: 40px;
+    font-weight: 600;
+}
+#myMail:hover {
+	text-decoration: underline;
+	color: $color5;
+}
+#iconPhone {
+	display: flex;
+	justify-content: center;
+	color: rgb(0, 0, 0);
+	font-size: 2em;
+}
+#logoPhone {
+	width: 50px;
+	height: 50px;
+	float : left;
+	margin: 20px 50px 0 0px;
+	border-radius: 50px;
+	border: 5px solid $color1;
+    background-color: #eee;
+}
+#logoPhone:hover {
+	float : left;
+	background-color: #eee;
+	border: 5px solid $color4;
+}
+#myPhone {
+	text-decoration: none;
+	color: rgb(26, 25, 24);
+	margin : 40px 0;
+}
+#myPhone:hover {
+	text-decoration: underline;
+	color: $color5;
+}
+
 
 footer {
     height: 10vh;

@@ -117,6 +117,10 @@ nav ul li a:hover {
   color: #fff4bf;
 }
 
+nav ul li a:active {
+  color: #fff4bf;
+}
+
 .welcome_page {
   height: 30vh;
   background-color: #F7FFF7;
@@ -140,12 +144,46 @@ nav ul li a:hover {
   font-family: 'Merriweather', serif;
   margin-bottom: 2vh;
   font-size: 3em;
-  color: #2f3a47;
   border-bottom: 1px solid transparent;
+  padding: 12px 48px;
+  color: #cbd3dd;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #FFE66D), color-stop(20%, white), color-stop(40%, #fffdf2));
+  background: linear-gradient(to right, #FFE66D 40%, white 20%, #fffdf2 40%);
+  background-position: 0;
+  -webkit-animation: shine 3s infinite linear;
+          animation: shine 3s infinite linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0px;
+  }
+  60% {
+    background-position: 220px;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0px;
+  }
+  60% {
+    background-position: 220px;
+  }
+  100% {
+    background-position: 0px;
+  }
 }
 
 .welcome_page h2 span {
-  color: #627994;
+  color: #586c84;
 }
 
 .welcome_page button {
@@ -203,6 +241,7 @@ nav ul li a:hover {
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 5px black;
           box-shadow: 2px 2px 5px black;
+  margin-left: 2vw;
   font-size: 0.6em;
   color: #2f3a47;
 }
@@ -234,6 +273,123 @@ nav ul li a:hover {
 
 .support section {
   margin-top: 1vh;
+}
+
+.support a {
+  font-weight: 600;
+  color: #627994;
+}
+
+.support a:hover {
+  color: #d3af00;
+}
+
+.contact {
+  padding: 3vh 7vw;
+  line-height: 1.5em;
+  background-color: #29b1a8;
+  color: #F7FFF7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  vertical-align: center;
+}
+
+.contact h2 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  font-size: 1.3em;
+  margin-bottom: 2vh;
+}
+
+.contact h3 {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+  margin-bottom: 1.5vh;
+}
+
+.contact section {
+  margin-top: 1vh;
+}
+
+#mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-size: 1.4em;
+}
+
+#logoMail {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 20px 50px 0 0px;
+  background-color: #eee;
+  border-radius: 50px;
+  border: 5px solid #2f3a47;
+}
+
+#logoMail:hover {
+  float: left;
+  border: 5px solid #FF6B6B;
+}
+
+#myMail {
+  text-decoration: none;
+  color: #1a1918;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+#myMail:hover {
+  text-decoration: underline;
+  color: #FFE66D;
+}
+
+#iconPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-size: 2em;
+}
+
+#logoPhone {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 20px 50px 0 0px;
+  border-radius: 50px;
+  border: 5px solid #2f3a47;
+  background-color: #eee;
+}
+
+#logoPhone:hover {
+  float: left;
+  background-color: #eee;
+  border: 5px solid #FF6B6B;
+}
+
+#myPhone {
+  text-decoration: none;
+  color: #1a1918;
+  margin: 40px 0;
+}
+
+#myPhone:hover {
+  text-decoration: underline;
+  color: #FFE66D;
 }
 
 footer {
