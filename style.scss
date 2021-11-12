@@ -101,12 +101,15 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: -1px;
     align-items: center;
     height: 4vh;
     padding : 3vw 1vw;
     width: 100vw;
     background-color: $color2;
     color : $color1;
+    
 }
 h1 {
     font-family: 'Roboto Slab', serif;
@@ -147,6 +150,7 @@ nav ul li a:hover {
     margin-bottom: 2vh;
     font-size: 3em;
     color: $color1;
+    border-bottom: 1px solid transparent;
 }
 .welcome_page h2 span {
     color: lighten($color1, $amount : 25%);
@@ -157,6 +161,10 @@ nav ul li a:hover {
 }
 .welcome_page button:hover {
     font-size: 0.8em;
+}
+.logo img {
+    width: 30vw;
+    height: 30vh;
 }
 
 .asso_description {
