@@ -205,7 +205,7 @@ nav ul li a:visited {
 .asso_description h2 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 2vh;
 }
 
@@ -213,7 +213,7 @@ nav ul li a:visited {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 .asso_description button {
@@ -234,6 +234,33 @@ nav ul li a:visited {
   color: lightblue;
 }
 
+.photo {
+  width: 200px;
+  height: 100px;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  float: right;
+  margin: 2vh 0 0 1vh;
+}
+
+.photo_bordu {
+  width: 160px;
+  height: 120px;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  float: right;
+  margin: 2vh 0 0 1vh;
+}
+
+.photo_duo {
+  width: 120px;
+  height: 180px;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  float: right;
+  margin: 2vh 0 0 1vh;
+}
+
 .support {
   padding: 3vh 7vw;
   line-height: 1.5em;
@@ -243,7 +270,7 @@ nav ul li a:visited {
 .support h2 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 2vh;
 }
 
@@ -251,7 +278,7 @@ nav ul li a:visited {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 .support a {
@@ -277,7 +304,7 @@ nav ul li a:visited {
 #contact h2 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 2vh;
 }
 
@@ -285,16 +312,16 @@ nav ul li a:visited {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 .logo {
   width: 50px;
   height: 50px;
-  float: left;
   margin: 20px 20px 0 0px;
+  padding: 5px;
   background-color: #eee;
-  border-radius: 50px;
+  border-radius: 100px;
   border: 5px solid #2f3a47;
 }
 
@@ -306,7 +333,7 @@ nav ul li a:visited {
   font-size: 0.7em;
 }
 
-.mail_and_phone {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,6 +342,10 @@ nav ul li a:visited {
           justify-content: center;
   color: black;
   font-size: 2em;
+}
+
+.social_logo {
+  margin: 3vh 0 3vh 10vw;
 }
 
 #phone {
@@ -332,7 +363,7 @@ nav ul li a:visited {
 .upcomming_event h2 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 2vh;
 }
 
@@ -340,7 +371,7 @@ nav ul li a:visited {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 .passed_event {
@@ -353,7 +384,7 @@ nav ul li a:visited {
 .passed_event h2 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 2vh;
 }
 
@@ -361,7 +392,7 @@ nav ul li a:visited {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 .stage_event {
@@ -373,7 +404,7 @@ nav ul li a:visited {
 .stage_event h2 {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 2vh;
 }
 
@@ -381,7 +412,7 @@ nav ul li a:visited {
   font-family: 'Merriweather', serif;
   text-decoration: underline;
   margin-bottom: 1.5vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 footer {
@@ -464,17 +495,20 @@ footer {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
     font-size: 2.5em;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
   }
   .asso_description h3 {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    margin-bottom: 4vh;
+    margin-top: 5vh;
     font-size: 1.5em;
   }
   .asso_description p {
     font-size: 1.3em;
+  }
+  .asso_description h2 {
+    white-space: nowrap;
   }
   .asso_description button {
     font-size: 1.3em;
@@ -489,13 +523,13 @@ footer {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
     font-size: 2.5em;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
   }
   .support h3 {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    margin-bottom: 4vh;
+    margin-top: 5vh;
     font-size: 1.5em;
   }
   .support p {
@@ -513,13 +547,13 @@ footer {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
     font-size: 2.5em;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
   }
   #contact h3 {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    margin-bottom: 4vh;
+    margin-top: 5vh;
     font-size: 1.5em;
   }
   #contact p {
@@ -531,14 +565,17 @@ footer {
   .logo {
     width: 90px;
     height: 90px;
-    margin: 5vh 5vw 0 0px;
+    margin: 5vh 3vw 0 0px;
+  }
+  .social_logo {
+    margin: 3vh 0 3vh 5vw;
   }
   .logo:hover {
-    float: left;
     border: 5px solid #FF6B6B;
   }
   #mail {
     margin-top: 10vh;
+    font-size: 1.1em;
   }
   #mail:hover {
     text-decoration: underline;
@@ -549,6 +586,7 @@ footer {
   }
   #phone {
     margin: 10vh 0;
+    font-size: 1.3em;
   }
   #phone:hover {
     text-decoration: underline;
@@ -562,13 +600,13 @@ footer {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
     font-size: 2.5em;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
   }
   .upcomming_event h3 {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    margin-bottom: 4vh;
+    margin-top: 5vh;
     font-size: 1.5em;
   }
   .upcomming_event p {
@@ -582,17 +620,46 @@ footer {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
     font-size: 2.5em;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
   }
   .passed_event h3 {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    margin-bottom: 4vh;
+    margin-top: 5vh;
     font-size: 1.5em;
   }
   .passed_event p {
     font-size: 1.3em;
+  }
+  .photo {
+    width: 400px;
+    height: 200px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    float: right;
+    margin: 2vh 0 0 1vh;
+    margin-left: 3vh;
+  }
+  .photo_bordu {
+    width: 230px;
+    height: 170px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    float: right;
+    margin: 2vh 0 0 1vh;
+    margin-left: 3vw;
+    margin-top: -1vh;
+  }
+  .photo_duo {
+    width: 140px;
+    height: 200px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    float: right;
+    margin: 2vh 0 0 1vh;
+    float: left;
+    margin: 4vh 3vw 1vh 0;
   }
   .stage_event {
     padding: 10vh 25vw;
@@ -602,13 +669,13 @@ footer {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
     font-size: 2.5em;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
   }
   .stage_event h3 {
     font-family: 'Merriweather', serif;
     text-decoration: underline;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    margin-bottom: 4vh;
+    margin-top: 5vh;
     font-size: 1.5em;
   }
   .stage_event p {
